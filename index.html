@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr. Sonu Yadav | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <h1>Port<span>folio</span></h1>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+      <div class="right-btns">
+        <a href="Sonu_Yadav_CV.docx" download><button>Download CV</button></a>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </nav>
+
+    <div class="portfolio">
+      <div class="left" data-aos="fade-right">
+        <div class="circle">
+          <img src="sonu22.png" alt="Your Photo">
+        </div>
+      </div>
+      <div class="right" data-aos="fade-left">
+        <h3>Hello, I'm</h3>
+        <h1>Mr. Sonu Yadav</h1>
+        <h2>And I'm a <span>Creative Web Designer crafting Modern & User-Friendly Websites.</span></h2>
+        <p>I design responsive, visually stunning, and fully functional websites that help businesses grow and stand out online.</p>
+        
+        <div class="social-media">
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-linkedin-box-fill"></i>
+        </div>
+        
+        <div class="buttons">
+          <button id="hire">Hire Me</button>
+          <button id="contact">Contact Me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I am a passionate web designer with experience in creating modern, responsive, and user-friendly websites. I focus on clean design, usability, and performance to help businesses succeed online.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-level html"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-level css"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-level js"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>React</h3>
+          <div class="skill-bar">
+            <div class="skill-level react"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up">
+      <h2>Services</h2>
+      <div class="services-list">
+        <div class="service">
+          <i class="ri-code-s-slash-line service-icon"></i>
+          <h3>Web Development</h3>
+          <p>Building responsive and performant websites tailored to your business needs.</p>
+        </div>
+        <div class="service">
+          <i class="ri-brush-line service-icon"></i>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive and engaging user interfaces for better user experience.</p>
+        </div>
+        <div class="service">
+          <i class="ri-smartphone-line service-icon"></i>
+          <h3>Mobile Friendly</h3>
+          <p>Ensuring your website looks great and works well on all devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-form" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="_replyto" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- AOS & Theme Toggle JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      toggle.textContent = document.body.classList.contains('light-mode') ? '🌞' : '🌙';
+    });
+  </script>
+</body>
+</html>
